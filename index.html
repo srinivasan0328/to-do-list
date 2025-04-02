@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +14,22 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./custom.css">
 </head>
+
 <body>
-    <div class="container">
-        <h2>To-Do List</h2>
-        <input type="text" id="taskInput" placeholder="Enter task...">
-        <button onclick="addTask()">Add</button>
-        <ul id="taskList"></ul>
-    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>To-Do List</h2>
+                    <input type="text" id="taskInput" placeholder="Enter task...">
+                    <button onclick="addTask()" class="addBtn"> <i class="fa-solid fa-plus"></i> </button>
+                    <ul id="taskList"></ul>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -27,9 +37,9 @@
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-        crossorigin="anonymous">
-    </script>
-   <script src="./script.js"></script>
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+        </script>
+    <script src="./script.js"></script>
 </body>
+
 </html>

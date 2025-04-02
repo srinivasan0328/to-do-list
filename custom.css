@@ -1,65 +1,98 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background-color: #e0e39c;
+  background-color: #e5ea92;
 }
 .container {
   width: 70%;
   margin: 50px auto;
-  background: #eae8e8;
+  background-color: #e6f373;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px -1px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  z-index: 100;
 }
 input {
   width: 80%;
+  min-width: 200px;
   padding: 8px 15px;
-  margin-bottom: 10px;
+  margin-bottom: 2.5rem;
   outline: none;
   border: none;
-  border-radius: 4px;
+  border-radius: 25px;
   color: #000000;
+  background-color: #dfe2ab;
   font-weight: 500;
   font-size: 1.6rem;
+  box-shadow: 2px -1px 10px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
-button {
-  padding: 8px 15px;
+
+.addBtn {
+  padding: 8px 13px;
   cursor: pointer;
   background: #0b720b;
   color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   margin-left: 1rem;
 }
 
+input::-webkit-input-placeholder {
+  font-size: large;
+  color: #6f6f6f;
+}
 ul {
   list-style-type: none;
-  padding: 0;
+  /* padding: 0; */
+  width: 90%;
+  margin: auto;
 }
 
 li {
-  background-color: #beccd3;
-  padding: 8px;
-  /* margin-top: 5px; */
+  background-color: #dedc6a;
+  text-transform: capitalize;
+  color: #000000;
+  padding: 5px;
+  text-align: start;
   display: flex;
+  align-items: center;
+  padding: 0.5rem 1.6rem;
   justify-content: space-between;
-  border-radius: 5px;
+  border-radius: 1px 35px 35px 1px;
   margin-bottom: 1.5rem;
+  /* border-bottom: 2px solid #6f6f6f; */
+}
+li:nth-of-type(odd){
+  background-color: #dedc6a;
+}
+li:nth-of-type(even){
+  background-color: #c2c062;
 }
 .delete {
-  background: #ff3333;
+  background-color: none;
   border: none;
-  color: #ffffff;
-  padding: 7px 10px;
+  color: #f01f1f;
+  padding: 8px 13px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 50%;
+  text-align: center;
 }
 
-h2{
+h2 {
   font-size: 2.5rem;
   font-weight: 550;
   margin-bottom: 2rem;
   color: #292626;
+}
+@keyframes move {
+  from{
+    transform: translateX(50px);
+  }
+  to{
+    transform: translateX(-50px);
+  }
 }
 
 /* Small devices (landscape phones, upto 576px and below) */
@@ -72,7 +105,13 @@ h2{
   input {
     width: 100%;
   }
-  button{
+  button {
     margin-bottom: 1.5rem;
   }
+   ul{
+    width: 100%;
+  }
+  /* li{
+    overflow-wrap: break-word;
+  }  */
 }
