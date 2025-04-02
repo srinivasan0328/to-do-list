@@ -111,7 +111,7 @@ h2 {
    ul{
     width: 100%;
   }
-  /* li{
-    overflow-wrap: break-word;
-  }  */
+  li{
+    overflow-wrap: anywhere;
+  } 
 }
